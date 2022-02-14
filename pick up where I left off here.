@@ -1,0 +1,81 @@
+aaron0413@aaron0413-VirtualBox:~$ cd
+aaron0413@aaron0413-VirtualBox:~$ mkdir repos
+mkdir: cannot create directory ‘repos’: File exists
+aaron0413@aaron0413-VirtualBox:~$ cd repos
+aaron0413@aaron0413-VirtualBox:~/repos$ git clone git@github.com:aaron1199s/git_test.git
+Cloning into 'git_test'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+aaron0413@aaron0413-VirtualBox:~/repos$ cd git_test/
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ touch hello_world.txt
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git add hello_world.txt
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello_world.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git hub repository
+
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git add git hub repository
+fatal: pathspec 'git' did not match any files
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git commit -m "Add hello_world.txt"
+[main cb19811] Add hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git hub repository
+
+nothing added to commit but untracked files present (use "git add" to track)
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git hub repository
+
+nothing added to commit but untracked files present (use "git add" to track)
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git hub repository
+
+nothing added to commit but untracked files present (use "git add" to track)
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ "git add"
+git add: command not found
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ git add git hub repository
+fatal: pathspec 'git' did not match any files
+aaron0413@aaron0413-VirtualBox:~/repos/git_test$ 
